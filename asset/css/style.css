@@ -95,7 +95,12 @@ html{
     color: #007bff;
 }
 
-.card-img-top:hover{
+.product__name{
+    text-align: center;
+    font-weight: 500;
+}
+
+.card__product__main:hover{
     opacity: 0.6;
 }
 
@@ -164,6 +169,14 @@ html{
     margin: 96px 0;
 }
 
+.value__customer{
+    color: #007bff;
+    font-weight: 700;
+    margin-top: 48px;
+    text-align: center;
+    font-size: 32px;
+}
+
 .value__content{
     background-color: #fff;
     width: 100%;   
@@ -171,8 +184,13 @@ html{
     
 }
 
+.card__btn{
+    font-weight: 500;
+}
+
 .value{
-    margin: 0 109.909px;
+    margin: 0 100px;
+    /* padding: 0 100px; */
 }
 
 .value__person{
@@ -203,4 +221,29 @@ html{
 
 .card__by__per{
     font-size: 12px;
+}
+
+.footer{
+    margin-top: 96px;
+}
+
+
+.about__text:hover {
+    color: #007bff;
+    /* background-color: #007bff; */
+}
+
+.about__text{
+    font-size: 12px;
+    
+}
+
+.about__text__disable{
+    font-size: 12px;
+    text-align: justify
+}
+
+.form-control, .form__btn{
+    font-size: 12px;
+   
 }
