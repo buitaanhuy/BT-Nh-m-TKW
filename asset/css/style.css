@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.nav-img{
+    max-width: 173px;
+    max-height: 64px;
+    opacity: 1;
+    object-fit: cover;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, #414040, #040000);
+    height: 58px;
+}
+
+#navbarSupportedContent{
+    padding: 0  50px;
+    
+}
+
+.nav-item{
+    font-weight: 500;
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-item:hover .nav-link{
+    color: #007bff;
+}
+
+.nav-item:hover .subnav{
+    display: block;
+}
+
+.nav-icons{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icons li{
+    list-style: none;
+    padding: 0 12px;
+}
+
+.icon-item{
+    color: #fff;
+}
+
+.subnav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    top: 49px;
+}
+
+.subnav::after{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+}
+
+.icon-item:hover{
+    opacity: 0.8;
+}
+
+.slide{
+    margin-top: 57.5px;
+}
+
+.slide__item{
+    width: 100%;
+    height: 540px;
+}
+
+.content__header{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.card-img-top:hover{
+    opacity: 0.6;
+}
+
+.header__nav{
+    margin: 48px 0;
+    justify-content: center;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: #7f7f7f;
+    background-color: #F5F5F5;
+    padding: 10px;
+}
+
+.header__text:hover a{
+    color: #040000;
+}
+
+.header__text{
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    flex: none;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.card__price{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+.card__price__disable{
+    text-decoration: line-through;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card__product__rating{
+    font-size: 12px;
+    color: #FFCE3E;
+    margin-bottom: 4px;
+}
+
+.card__product__sold-out{
+    color: #414040;
+    font-weight: 600;
+}
+
+.product__value{
+    width: 100%;
+    background-color: #040000;
+    margin: 96px 0;
+}
+
+.value__content{
+    background-color: #fff;
+    width: 100%;   
+    margin: 48px 0;
+    
+}
+
+.value{
+    margin: 0 109.909px;
+}
+
+.value__person{
+    border-radius: 50%;
+    width: 60px;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    margin: 20px 0 14px 0;
+}
+
+.rate__style{
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
+
+.value__text{
+    margin: 30px 30px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.value__name{
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.card__by__per{
+    font-size: 12px;
+}

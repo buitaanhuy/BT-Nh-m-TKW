@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="asset/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="main">
+    <!-- header start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-black.bg-gradient fixed-top">
+        <div class="container-fluid ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">
+                            <img class="nav-img" src="https://samcenter.vn/images/thumbs/0003182_logo (2).png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                        Sản phẩm
+                        <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu subnav">
+                            <li><a class="dropdown-item" href="#">Sam sung note 5</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sam sung s22</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sam sung s23</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Thanh toán</a>
+                    </li>
+                </ul>
+                <ul class="nav-icons d-flex">
+                    <li class="icon-item"><a href=""><i class="fa-solid fa-magnifying-glass icon-item"></i></a></li>
+                    <li class="icon-item"><a href=""><i class="fa-solid fa-cart-shopping icon-item"></i></a></li>
+                    <li class="icon-item"><a href=""><i class="fa-solid fa-user icon-item"></i></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+    
+    <!-- slider start -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./asset/img/slider1.png" class="d-block slide__item" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/img/slider2.png" class="d-block slide__item" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/img/slider3.png" class="d-block slide__item" alt="">
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+    <!-- slider end -->
+
+    <!-- Sản phẩm chính start -->
+    <div class="container mt-5 mb-5">
+      <div class="row content">
+        <h2 class="content__header">SẢN PHẨM CHÍNH</h2>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="https://placehold.co/600x800" class="card-img-top" alt="...">
+          </div>
+        </div>
+
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="https://placehold.co/600x800" class="card-img-top" alt="...">
+          </div>
+        </div>
+
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="https://placehold.co/600x800" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sản phẩm chính end -->
+
+    <!-- Menu sản phẩm start -->
+    <div class="container mt-5 mb-5">
+      <div class="row content">
+        <div class="btn-group header__nav" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary header__text" for="btnradio1">SẢN PHẨM MỚI</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary header__text" for="btnradio2">SẢN PHẨM NỔI BẬT</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary header__text" for="btnradio3">SẢN PHẨM BÁN CHẠY</label>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sam Sung S23 ultra 256GB</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card__price">30.890.000VNĐ 
+                <span class="card__price__disable">40.990.000VNĐ</span>
+              </p>
+              <div class="card__product__rating">
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <span class="card__product__sold-out">189 đã bán</span>
+              </div>
+              <a href="#" class="btn btn-primary">Mua ngay</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="./asset/img/sp2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy Z Flip5 256GB</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card__price">19.900.000VNĐ 
+                <span class="card__price__disable">25.990.000VNĐ</span>
+              </p>
+              <div class="card__product__rating">
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <span class="card__product__sold-out">219 đã bán</span>
+              </div>
+              <a href="#" class="btn btn-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="./asset/img/sp3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy Z Fold5 512GB</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card__price">33.990.000VNĐ 
+                <span class="card__price__disable">44.990.000VNĐ</span>
+              </p>
+              <div class="card__product__rating">
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <span class="card__product__sold-out">768 đã bán</span>
+              </div>
+              <a href="#" class="btn btn-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <img src="./asset/img/sp4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy Z Fold4 256GB</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card__price">23.890.000VNĐ 
+                <span class="card__price__disable">40.990.000VNĐ</span>
+              </p>
+              <div class="card__product__rating">
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+                <span class="card__product__sold-out">590 đã bán</span>
+              </div>
+              <a href="#" class="btn btn-primary">Mua ngay</a>
+            </div>
+          </div>
+        </div>
+    <!-- Menu sản phẩm end -->
+
+    <!-- Sản phẩm khuyến mãi start -->
+    <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item  slider__sale active">
+          <div class="section__img">
+            <img src="https://placehold.co/600x800" class="item__img" alt="...">
+          </div>
+          <div class="item__content">
+            <h1 class="item__header">SAM SUNG S23 ULTRA</h1>
+            <p class="product__code">SS01</p>
+            <p class="price__disable">25.000.000VNĐ</p>
+            <p class="price__active">20.000.000VNĐ <span class="time__sale">Chỉ hôm nay</span></p>
+            <p class="item__descr">Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó</p>
+            <button type="button" class="btn btn-primary">Mua ngay</button>
+          </div>
+        </div>
+        <div class="carousel-item slider__sale">
+          <div class="section__img">
+            <img src="https://placehold.co/600x800" class="item__img" alt="...">
+          </div>
+          <div class="item__content">
+            <h1 class="item__header">SAM SUNG S23</h1>
+            <p class="product__code">SS01</p>
+            <p class="price__disable">25.000.000VNĐ</p>
+            <p class="price__active">20.000.000VNĐ <span class="time__sale">Chỉ hôm nay</span></p>
+            <p class="item__descr">Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó</p>
+            <button type="button" class="btn btn-primary">Mua ngay</button>
+          </div>
+        </div>
+        <div class="carousel-item slider__sale">
+          <div class="section__img">
+            <img src="https://placehold.co/600x800" class="item__img" alt="...">
+          </div>
+          <div class="item__content">
+            <h1 class="item__header">SAM SUNG S212312</h1>
+            <p class="product__code">SS01</p>
+            <p class="price__disable">25.000.000VNĐ</p>
+            <p class="price__active">20.000.000VNĐ <span class="time__sale">Chỉ hôm nay</span></p>
+            <p class="item__descr">Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó Sản phẩm gì gì đó</p>
+            <button type="button" class="btn btn-primary">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <!-- Sản phẩm khuyến mãi end -->
+
+    <!-- Đánh giá sản phẩm start -->
+    
+
+
+
+    <!-- Đánh giá sản phẩm end -->
+    </div>
+  </div>
+
+  <div class="product__value">
+      <div class="row value">
+        <div class="col-xl-4">
+          <div class=" value__content">
+            <img src="./asset/img/per5.jpg" alt="" class="value__person ">
+            <div class="card__product__rating rate__style">
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+            </div>
+            <p class="value__text">
+              Điện thoại đẹp, xài mượt lắm, chụp hình siêu nét, chân thật. Tôi rất hài lòng về sản phẩm của shop, xứng đáng 5 sao.
+            </p>
+            <p class="value__name">
+              T.S Nhật Linh
+            </p>
+          </div> 
+        </div> 
+        <div class="col-xl-4">
+          <div class=" value__content">
+            <img src="./asset/img/per2.jpg" alt="" class="value__person ">
+            <div class="card__product__rating rate__style">
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+            </div>
+            <p class="value__text">
+              Giao hàng nhanh, sản phẩm đúng như mong đợi, anh shipper dễ thương, bé nhân viên tên L mờ lem lắm, tôi sẽ quay lại để ủng hộ em.
+            </p>
+            <p class="value__name">
+              TGĐ Giang Nguyễn
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="value__content">
+            <img src="./asset/img/per6.jpg" alt="" class="value__person ">
+            <div class="card__product__rating rate__style">
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+              <i class="home-product-item__rating--gold fa-solid fa-star"></i>
+            </div>
+            <p class="value__text">
+              I think this is one of my favorite stores, good quality products and very delicious, charming, enthusiastic consultants.
+            </p>
+            <p class="value__name">
+              President Donald Chi Tam
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row content">
+      <h2 class="content__header">BÀI VIẾT MỚI NHẤT</h2>
+      <div class="col-xl-4">
+        <div class="card">
+          <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cách để sử dụng điện thoại tiết kiệm pin đến 8 tiếng</h5>
+            <p class="card__by__per">By Admin |Thứ năm |14:23 |16/10/2023</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content ...</p>
+            <a href="#" class="btn btn-primary">XEM THÊM</a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cách để sử dụng điện thoại tiết kiệm pin đến 8 tiếng</h5>
+            <p class="card__by__per">By Admin |Thứ năm |14:23 |16/10/2023</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content ...</p>
+            <a href="#" class="btn btn-primary">XEM THÊM</a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cách để sử dụng điện thoại tiết kiệm pin đến 8 tiếng</h5>
+            <p class="card__by__per">By Admin |Thứ năm |14:23 |16/10/2023</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content ...</p>
+            <a href="#" class="btn btn-primary">XEM THÊM</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
