@@ -7,40 +7,43 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="asset/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="./asset/css/responsive.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="main">
     <!-- header start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-black.bg-gradient fixed-top">
-        <div class="container-fluid ">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span>
+            <img class="nav-img" src="https://samcenter.vn/images/thumbs/0003182_logo (2).png" alt="logo">
+          </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span><i class="fa-solid fa-bars icon_bar"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">
-                            <img class="nav-img" src="https://samcenter.vn/images/thumbs/0003182_logo (2).png" alt="logo">
-                        </a>
+                        <a class="nav-link" href="#">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  " aria-current="page" href="#">Trang chủ</a>
+                        <a class="nav-link" href="#Gioithieu">Giới thiệu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  " aria-current="page" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item dropdown mobile__nav">
+                        <a class="nav-link" href="#Sanpham">
                         Sản phẩm
-                        <i class="fa-solid fa-caret-down"></i>
+                          <i class="fa-solid fa-caret-down icon__down"></i>
                         </a>
-                        <ul class="dropdown-menu subnav">
-                            <li><a class="dropdown-item" href="#">Sam sung S23 Ultra</a></li>
+                        <ul class="dropdown-menu subnav nav__list" id="subnav "> 
+                            <li><a class="dropdown-item" href="#Sanpham">Sam sung S23 Ultra</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Galaxy Z Flip5 </a></li>
+                            <li><a class="dropdown-item" href="#Sanpham">Galaxy Z Flip5 </a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Galaxy Watch Buds 2 Pro</a></li>
+                            <li><a class="dropdown-item" href="#Sanpham">Galaxy Watch Buds 2 Pro</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Thanh toán</a>
+                        <a class="nav-link " aria-current="page" href="#Thanhtoan">Thanh toán</a>
                     </li>
                 </ul>
                 <ul class="nav-icons d-flex">
@@ -57,39 +60,44 @@
     <!-- header end -->
     
     <!-- slider start -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./asset/img/slider1.png" class="d-block slide__item" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="./asset/img/slider2.png" class="d-block slide__item" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="./asset/img/slider3.png" class="d-block slide__item" alt="">
-            </div>
-        </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./asset/img/slider1.png" alt="" class="d-block w-100">
     </div>
+    <div class="carousel-item">
+      <img src="./asset/img/slider2.png" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="./asset/img/slider3.png" alt=" " class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
     <!-- slider end -->
 
     <!-- Sản phẩm chính start -->
-    <div class="container mt-5 mb-5">
+    <div class="container container__child">
       <div class="row content">
         <h2 class="content__header">SẢN PHẨM CHÍNH</h2>
-        <div class="col-xl-3">
+        <div class="col-xl-3 wrap__card">
           <div class="card card__product__main">
             <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="s23 ultra 1TB">
             <p class="product__name">S23 ULTRA 1TB</p>
@@ -120,7 +128,7 @@
     <!-- Sản phẩm chính end -->
 
     <!-- Menu sản phẩm start -->
-    <div class="container mt-5 mb-5">
+    <div class="container container__child">
       <div class="row content">
         <div class="btn-group header__nav" role="group" aria-label="Basic radio toggle button group">
           <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -225,8 +233,8 @@
   <div class="product__value">
       <div class="row value">
         <h3 class="value__customer">ĐÁNH GIÁ CỦA KHÁCH HÀNG</h3>
-        <div class="col-xl-4">
-          <div class=" value__content">
+        <div class="col-xl-4 value__body">
+          <div class="card value__content">
             <img src="./asset/img/per5.jpg" alt="" class="value__person ">
             <div class="card__product__rating rate__style">
               <i class="home-product-item__rating--gold fa-solid fa-star"></i>
@@ -243,8 +251,8 @@
             </p>
           </div> 
         </div> 
-        <div class="col-xl-4">
-          <div class=" value__content">
+        <div class="col-xl-4 value__body">
+          <div class="card value__content">
             <img src="./asset/img/per1.jpg" alt="" class="value__person ">
             <div class="card__product__rating rate__style">
               <i class="home-product-item__rating--gold fa-solid fa-star"></i>
@@ -261,8 +269,8 @@
             </p>
           </div>
         </div>
-        <div class="col-xl-4">
-          <div class="value__content">
+        <div class=" col-xl-4 ">
+          <div class="card value__content">
             <img src="./asset/img/per6.jpg" alt="" class="value__person ">
             <div class="card__product__rating rate__style">
               <i class="home-product-item__rating--gold fa-solid fa-star"></i>
@@ -284,22 +292,22 @@
     <!-- Đánh giá sản phẩm end -->
 
     <!-- Bài viết mời nhất start -->
-  <div class="container mt-5 mb-5">
+  <div class="container container__child">
     <div class="row content">
       <h2 class="content__header">BÀI VIẾT MỚI NHẤT</h2>
-      <div class="col-xl-4">
-        <div class="card">
+      <div class="col-xl-4 content__body">
+        <div class="card content__body">
           <img src="./asset/img/bv1.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Các tính năng vượt trội của s23 ultra</h5>
+            <h5 class="card-title">Các tính năng mới vượt trội của s23 ultra </h5>
             <p class="card__by__per">By Admin |Thứ tư |16:13 |18/10/2023</p>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content ...</p>
             <a href="#" class="btn btn-primary card__btn">XEM THÊM</a> 
           </div>
         </div>
       </div>
-      <div class="col-xl-4">
-        <div class="card">
+      <div class="col-xl-4 content__body">
+        <div class="card content__body">
           <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Bài học cách sử dụng camera đẳng cấp của s23 ultra</h5>
@@ -309,8 +317,8 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4">
-        <div class="card">
+      <div class="col-xl-4 ">
+        <div class="card content__body">
           <img src="./asset/img/sp1.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cách tận dụng S Pen cho công việc hiệu quả</h5>
@@ -326,8 +334,8 @@
     <!-- Bài viết mời nhất end -->
 
     <!-- footer start -->
-  <footer class="bg-dark text-white pt-5 pb-4 footer">
-    <div class="container-fluid text-start px-5"> 
+  <footer class="bg-dark text-white footer">
+    <div class="container footer__content"> 
         <div class="row text-start ">
             <div class="order-2 col-lg-3 order-lg-1 mx-auto mt-3 pe-5 footer__Scamcenter"> 
                 <div> 
@@ -338,14 +346,14 @@
                         tốt nhất cho người dùng sản phẩm SamSung tại Việt Nam.
                     </p>
                 </div>
-                <div class="social pb-5 container-fluid">
+                <div class="social  container-fluid">
                     <a href="https://www.facebook.com/samcenter.hesman" target="_blank"><img src="./asset/img/Facebook.png" alt="Facebook" width="50px" height="50px"></a>
                     <a href="https://www.youtube.com/channel/UCEhyDvgWs_cK7ProomlZPJQ" target="_blank"><img src="./asset/img/Youtube.png" alt="youtube" width="50px" height="50px"></a>
                     <a href="https://zalo.me/3808879171637096332" target="_blank"><img src="./asset/img/Zalo.png" alt="Zalo" width="50px" height="50px"></a>
                 </div>
             </div> 
             <div class="order-3 col-lg-2 order-lg-2 mx-auto mt-3 footer__about "> 
-                <h5 class="font-weight-bold">Về SamCenter</h5> 
+                <h5 class="font-weight-bold footer__header">Về SamCenter</h5> 
                 <p class="pt-4 ">
                     <a href="#" class="text-white text-decoration-none link-primary about__text ">Tin tức</a>
                 </p>
@@ -357,7 +365,7 @@
                 </p>
             </div>  
             <div class=" order-4 col-lg-2 order-lg-3 mx-auto mt-3 footer__support"> 
-                <h5 class="font-weight-bold">Hỗ trợ khách hàng</h5>
+                <h5 class="font-weight-bold footer__header">Hỗ trợ khách hàng</h5>
                 <p class="pt-4 ">
                     <a href="#" class="text-white text-decoration-none link-primary about__text ">Bảo mật thông tin</a>
                 </p>
@@ -378,7 +386,7 @@
                 </p>
             </div> 
             <div class=" order-5 col-lg-2 order-lg-4  mx-auto mt-3 footer__contact"> 
-                <h5 class="font-weight-bold">Liên hệ</h5>
+                <h5 class="font-weight-bold footer__header">Liên hệ</h5>
                 <p class="pt-4 ">
                     <a href="#" class="text-white text-decoration-none link-primary about__text ">Hệ thống cửa hàng</a>
                 </p>
@@ -390,12 +398,12 @@
                 </p>
             </div>  
             <div class="order-1 col-lg-3 order-lg-5 mx-auto mt-3 footer__register"> 
-                <h5 class="font-weight-bold">Đăng ký nhận tin</h5>
+                <h5 class="font-weight-bold footer__header">Đăng ký nhận tin</h5>
                 <p class="pt-2 pb-2 about__text__disable">
                     Nhập thông tin sản phẩm mới và chương trình khuyến mại của SamCenter
                 </p>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control border border-0 pb-2 pt-2 ps-3" placeholder="Email của bạn" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="text" class="form-control border border-0 pb-2 pt-2 ps-3" placeholder="Email của bạn" aria-label="Recipient's username" aria-describedby="button-addon2" id="button-addon2">
                     <button class="btn btn-primary form__btn" type="button" id="button-addon2"> <i class="fa-solid fa-paper-plane"></i>  Đăng ký</button>
                   </div>
             </div> 
@@ -414,13 +422,16 @@
       </div> 
     </footer>
     <!-- footer end -->
-
+    <script>
+      $(document).ready(function(){
+                $('.mobile__nav').click(function(){
+                    $('.nav__list').slideToggle();
+                }
+                )
+                }
+            )
+    </script>
 </div>
-
-
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

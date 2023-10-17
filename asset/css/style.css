@@ -8,8 +8,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
+.main{
+    overflow: hidden;
+}
 
 .nav-img{
     max-width: 173px;
@@ -20,12 +21,20 @@ html{
 
 .navbar{
     background: linear-gradient(to bottom, #414040, #040000);
-    height: 58px;
+    height: auto;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
 }
 
-#navbarSupportedContent{
-    padding: 0  50px;
-    
+.icon_bar{
+    color: #fff;
+}
+
+.icon__down{
+    font-size: 14px;
+    color: #fff;
 }
 
 .nav-item{
@@ -40,6 +49,11 @@ html{
 
 .nav-item:hover .nav-link{
     color: #007bff;
+}
+
+.nav-item:hover .icon__down{
+    color: #007bff;
+
 }
 
 .nav-item:hover .subnav{
@@ -64,7 +78,7 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
     position: absolute;
-    top: 49px;
+    top: 48px;
 }
 
 .subnav::after{
@@ -80,13 +94,10 @@ html{
 }
 
 .slide{
-    margin-top: 57.5px;
+    z-index: 0;
+    margin-top: 55px;
 }
 
-.slide__item{
-    width: 100%;
-    height: 540px;
-}
 
 .content__header{
     text-align: center;
@@ -104,10 +115,14 @@ html{
     opacity: 0.6;
 }
 
+
+
 .header__nav{
     margin: 48px 0;
     justify-content: center;
 }
+
+
 
 .header__nav a{
     text-decoration: none;
@@ -124,10 +139,15 @@ html{
     font-size: 18px;
     font-weight: 700;
     list-style: none;
+    z-index: 0;
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {
     flex: none;
+}
+
+.container__child{
+    margin: 48px 109.909px ;
 }
 
 .card-title{
@@ -166,13 +186,13 @@ html{
 .product__value{
     width: 100%;
     background-color: #040000;
-    margin: 96px 0;
+    padding-bottom: 48px;    
 }
 
 .value__customer{
     color: #007bff;
     font-weight: 700;
-    margin-top: 48px;
+    margin: 48px 0;
     text-align: center;
     font-size: 32px;
 }
@@ -180,8 +200,7 @@ html{
 .value__content{
     background-color: #fff;
     width: 100%;   
-    margin: 48px 0;
-    
+    height: 100%;
 }
 
 .card__btn{
@@ -189,8 +208,8 @@ html{
 }
 
 .value{
-    margin: 0 100px;
-    /* padding: 0 100px; */
+    margin: 96px  100px 48px 100px;
+
 }
 
 .value__person{
@@ -216,15 +235,20 @@ html{
 .value__name{
     text-align: center;
     font-weight: 500;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .card__by__per{
     font-size: 12px;
 }
 
+.content__body{
+    height: 100%;
+}
+
 .footer{
     margin-top: 96px;
+    padding: 48px 0 0 0;
 }
 
 
@@ -246,4 +270,8 @@ html{
 .form-control, .form__btn{
     font-size: 12px;
    
+}
+
+.footer__header{
+    font-size: 18px;
 }
