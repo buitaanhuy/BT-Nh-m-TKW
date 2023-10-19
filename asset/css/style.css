@@ -118,7 +118,8 @@ html{
 
 
 .header__nav{
-    margin: 48px 0;
+    margin: 96px 0 48px 0;
+    display: flex;
     justify-content: center;
 }
 
@@ -187,6 +188,30 @@ html{
     width: 100%;
     background-color: #040000;
     padding-bottom: 48px;    
+}
+
+.tab__content{
+    /* margin-bottom: 540px; */
+    position: relative;
+    height: 400px;
+}
+
+.tabs{
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    transform: translateX(25px);
+    content-visibility: hidden;
+    opacity: 0;
+}
+
+.tabs.active{
+    opacity: 1;
+    transition: 1s ease;
+    transform: translateX(0);
+    content-visibility: visible;
 }
 
 .value__customer{

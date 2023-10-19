@@ -12,6 +12,11 @@
     .header__nav{
         margin: 20px 0;
     }
+
+    .tab__content{
+        height: 2650px;
+        margin-bottom: 48px;
+    }
     
     .container__child{
         margin: 24px ;
@@ -24,10 +29,6 @@
     .value__customer{
         margin-bottom: 20px;
         font-size: 26px;
-    }
-
-    .value__content{
-
     }
 
     .value__body{
@@ -50,8 +51,6 @@
     .dropdown-menu a{
         color: #fff;
     }
-    
-
 }
 
 /* Mobile */
@@ -75,6 +74,11 @@
 
     .header__nav{
         margin: 20px 0;
+    }
+
+    .tab__content{
+        height: 2000px;
+        margin-bottom: 24px
     }
 
     .value__customer{
@@ -116,7 +120,6 @@
         width: 100%;
     }
 
-    
     #button-addon2{
         border-radius: 4px;
         margin-top: 12px;
